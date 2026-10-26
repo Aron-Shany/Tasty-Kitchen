@@ -1,0 +1,172 @@
+.restaurant-details-container {
+  min-height: 70vh;
+}
+
+.restaurant-banner {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 32px 24px;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-image {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-info {
+  margin-left: 32px;
+}
+
+.banner-name {
+  font-size: 32px;
+}
+
+.banner-cuisine,
+.banner-location {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #e2e8f0;
+}
+
+.banner-stats {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.banner-stat-value {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.banner-stat-label {
+  font-size: 12px;
+  color: #cbd5e1;
+  margin-top: 4px;
+}
+
+.banner-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #94a3b8;
+  margin: 0 24px;
+}
+
+.food-items-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+}
+
+.food-image {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-info {
+  margin-left: 16px;
+}
+
+.food-name {
+  color: #183b56;
+  font-size: 16px;
+}
+
+.food-cost {
+  color: #334155;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.food-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.star-icon {
+  color: #ffcc00;
+}
+
+.food-rating-value {
+  color: #334155;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.add-button {
+  background-color: #ffffff;
+  color: #f7931e;
+  border: 1px solid #f7931e;
+  border-radius: 4px;
+  padding: 4px 20px;
+  font-weight: 700;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+}
+
+.counter-button {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+}
+
+.counter-value {
+  min-width: 32px;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .food-items-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-info {
+    margin: 16px 0 0;
+  }
+
+  .banner-name {
+    font-size: 24px;
+  }
+
+  .food-items-list {
+    grid-template-columns: 1fr;
+  }
+}

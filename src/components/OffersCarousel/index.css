@@ -1,0 +1,23 @@
+.offers-carousel {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+}
+
+.offer-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .offer-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer-image {
+    height: 130px;
+  }
+}
